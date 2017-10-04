@@ -1,32 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
-  width: 100%;
   height: 100%;
-  margin: 0px;
-  border: 0;
-  overflow: hidden;
-  display: block;
-}
-
-main {
-  display: block;
-}
-
-svg {
-  box-sizing: border-box;
-  border: 1px solid rgb(212, 212, 212);
+  width: 100%;
+  display: flex;
 }
 
 .shapes-container {
-  box-sizing: border-box;
-  border: 1px solid rgb(212, 212, 212);
+  position: relative;
+  display: block;
+	height: 50%;
+	width: 50%;
+  padding:5px;
+}
+
+.shape-wrapper {
+  width: min-content;
 }
 
 .shape {
+  position: relative;
+}
+
+#display-grid {
+  height: 600px;
+  width: 600px;
+  border: 1px solid #ccc;
+}
+
+#sm-triangle1 {
+  width: 0;
+  height: 0;
+  display: -webkit-inline-box;
+  border-style: solid;
+  border-width: 0 80px 80px 80px;
+  border-color: transparent transparent rgb(155, 82, 5) transparent;
 
 }
 
-line {
-  stroke: rgb(212, 212, 212);
-  stroke-width: 1px;
-  shape-rendering: crispEdges;
+#sm-triangle2 {
+  width: 0;
+  height: 0;
+  display: -webkit-inline-box;
+  border-style: solid;
+  border-width: 0 80px 80px 80px;
+  border-color: transparent transparent rgb(70, 65, 244) transparent;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+}
+
+#med-triangle {
+  width: 0;
+  height: 0;
+  display: -webkit-inline-box;
+  border-style: solid;
+  border-width: 0 0 150px 150px;
+  border-color: transparent transparent rgb(255, 0, 0) transparent;
+
+}
+
+#lg-triangle1 {
+  width: 0;
+  height: 0;
+  display: -webkit-inline-box;
+  border-style: solid;
+  border-width: 150px 0 150px 150px;
+  border-color: transparent transparent transparent rgb(6, 155, 85);
+
+}
+
+#lg-triangle2 {
+  width: 0;
+  height: 0;
+  display: -webkit-inline-box;
+  border-style: solid;
+  border-width: 150px 0 150px 150px;
+  border-color: transparent transparent transparent rgb(249, 170, 32);
+
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#square {
+  width: 100px;
+  height: 100px;
+  display: -webkit-inline-box;
+  background: yellow;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#rhomboid {
+  width: 150px;
+	height: 70px;
+  display: -webkit-inline-box;
+	background: rgb(95, 176, 228);
+  -webkit-transform: skew(45deg);
+  -moz-transform: skew(45deg);
+  -o-transform: skew(45deg);
 }
