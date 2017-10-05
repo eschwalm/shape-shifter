@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   background: #DDFCED;
+  font-family: sans-serif;
 }
 
 header {
@@ -12,6 +13,7 @@ header {
 
 .main {
   display: flex;
+  padding: 50px;
 }
 
 .shapes-container {
@@ -40,87 +42,71 @@ header {
   display: -webkit-inline-box;
 }
 
+.sidebar {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 500px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+
+.sidebar  a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    line-height: 52px;
+    color: rgb(95, 176, 228);
+    background: white;
+  }
+
 #display-grid {
   display: block;
   height: 500px;
   width: 500px;
-  border: 1px solid #ccc;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 2px solid black;
   background-size: 10px;
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, rgba(255, 255, 255, 1) 1px);
   background-position: 1px 9px;
 }
 
 #sm-triangle1 {
-  width: 0;
-  height: 0;
-  /*border-style: solid;
-  border-width: 0 80px 80px 80px;
-  border-color: transparent transparent rgb(155, 82, 5) transparent;*/
-
+  left: 75px;
+  top: -380px;
 }
 
 #sm-triangle2 {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 80px 80px 80px;
-  border-color: transparent transparent rgb(70, 65, 244) transparent;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-
+  left: 75px;
+  top: -455px;
 }
 
 #med-triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 150px 150px;
-  border-color: transparent transparent rgb(255, 0, 0) transparent;
-
+  left: 50px;
+  top: -540px;
 }
 
 #lg-triangle1 {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 150px 0 150px 150px;
-  border-color: transparent transparent transparent rgb(6, 155, 85);
 
 }
 
 #lg-triangle2 {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 150px 0 150px 150px;
-  border-color: transparent transparent transparent rgb(249, 170, 32);
-
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  left: 5px;
+  top: -305px;
 }
 
 #square {
-  width: 100px;
-  height: 100px;
-  background: yellow;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  left: 175px;
+  top: -640px;
   transform: rotate(45deg);
 }
 
 #rhomboid {
-  width: 150px;
-	height: 70px;
-	background: rgb(95, 176, 228);
-  -webkit-transform: skew(45deg);
-  -moz-transform: skew(45deg);
-  -o-transform: skew(45deg);
+  left: 0px;
+  top: -385px;
 }
