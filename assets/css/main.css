@@ -1,20 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html, body {
   height: 100%;
   width: 100%;
-  display: flex;
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+  height: 10%;
+}
+
+.main {
+  display: block;
 }
 
 .shapes-container {
   position: relative;
-  display: block;
-	height: 50%;
-	width: 50%;
+  display: inline-block;
+	/*height: 300px;*/
+	width: 300px;
   padding:5px;
+  border: 2px solid #ccc;
+  margin: 10px;
 }
 
 .shape-wrapper {
@@ -23,18 +29,22 @@ html, body {
 
 .shape {
   position: relative;
+  display: -webkit-inline-box;
 }
 
 #display-grid {
+  display: inline-block;
   height: 600px;
   width: 600px;
   border: 1px solid #ccc;
+  background-size: 10px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px);
+  background-position: 1px 9px;
 }
 
 #sm-triangle1 {
   width: 0;
   height: 0;
-  display: -webkit-inline-box;
   border-style: solid;
   border-width: 0 80px 80px 80px;
   border-color: transparent transparent rgb(155, 82, 5) transparent;
@@ -44,7 +54,6 @@ html, body {
 #sm-triangle2 {
   width: 0;
   height: 0;
-  display: -webkit-inline-box;
   border-style: solid;
   border-width: 0 80px 80px 80px;
   border-color: transparent transparent rgb(70, 65, 244) transparent;
@@ -59,7 +68,6 @@ html, body {
 #med-triangle {
   width: 0;
   height: 0;
-  display: -webkit-inline-box;
   border-style: solid;
   border-width: 0 0 150px 150px;
   border-color: transparent transparent rgb(255, 0, 0) transparent;
@@ -69,7 +77,6 @@ html, body {
 #lg-triangle1 {
   width: 0;
   height: 0;
-  display: -webkit-inline-box;
   border-style: solid;
   border-width: 150px 0 150px 150px;
   border-color: transparent transparent transparent rgb(6, 155, 85);
@@ -79,7 +86,6 @@ html, body {
 #lg-triangle2 {
   width: 0;
   height: 0;
-  display: -webkit-inline-box;
   border-style: solid;
   border-width: 150px 0 150px 150px;
   border-color: transparent transparent transparent rgb(249, 170, 32);
@@ -94,9 +100,7 @@ html, body {
 #square {
   width: 100px;
   height: 100px;
-  display: -webkit-inline-box;
   background: yellow;
-
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -107,7 +111,6 @@ html, body {
 #rhomboid {
   width: 150px;
 	height: 70px;
-  display: -webkit-inline-box;
 	background: rgb(95, 176, 228);
   -webkit-transform: skew(45deg);
   -moz-transform: skew(45deg);
