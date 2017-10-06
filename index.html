@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1c51f14d9d.js"></script>
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
   </script>
@@ -16,8 +18,26 @@
   </head>
   <body>
     <header>
-      <h1>Shape Shifter</h1>
+      <div id="about" class="tooltip">
+        About
+        <div class="tooltiptext">
+          Shape Shifter was inspired by the simple Chinese puzzle game Tangram. <br/><br/>
+          The objective of the game is to form the given shape using all seven pieces, which may not overlap.
+        </div>
+      </div>
 
+        <h1 class="title">Shape Shifter</h1>
+        <p class="sub-title">by Evan Schwalm</p>
+
+      <div class="header-links">
+
+        <a href="https://github.com/eschwalm">
+          <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/evan-schwalm-999701143/" style="margin-left: 15px">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
     </header>
 
     <div class="main">
@@ -46,7 +66,8 @@
           <a id="swan">
             <img class="img-icon" src="assets/images/swan.png"/>
             Swan
-          </a><a id="hammer">
+          </a>
+          <a id="hammer">
             <img class="img-icon" src="assets/images/hammer.png"/>
             Hammer
           </a>
@@ -118,6 +139,16 @@
       </div>
 
       <div id="display-grid">
+        <div id="details" class="tooltip">
+          ?
+          <span class="tooltiptext">
+            Click once to rotate!
+            <br/>
+            Hold click to drag shapes!
+          </span>
+        </div>
+        <button class="button" id="reset-button">Reset</button>
+        <button class="button" id="solution-button">Solution</button>
         <img
           id="display-svg"
           src="assets/images/arrow.png"/>
