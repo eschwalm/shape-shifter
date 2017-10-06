@@ -9,6 +9,7 @@
     src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
   </script>
     <script src="./lib/bundle.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <title>Shape Shifter</title>
 
@@ -16,85 +17,112 @@
   <body>
     <header>
       <h1>Shape Shifter</h1>
+
     </header>
 
     <div class="main">
-
-      <div class="shapes-container">
-        <div class="shape" id="lg-triangle1">
-          <svg height="300" width="150" viewbox="0 0 150 300">
-            <polygon points="0,0 0,300 150,150 0,0"
-            fill="rgb(6, 155, 85)"/>
-          </svg>
+      <div>
+        <div class="sidebar">
+          <a id="arrow">
+            <img class="img-icon" src="assets/images/arrow.png"/>
+            Arrow
+          </a>
+          <a id="chevron">
+            <img class="img-icon" src="assets/images/chevron.png"/>
+            Chevron
+          </a>
+          <a id="building">
+            <img class="img-icon" src="assets/images/building.png"/>
+            Building
+          </a>
+          <a id="camel">
+            <img class="img-icon" src="assets/images/camel.png"/>
+            Camel
+          </a>
+          <a id="bird">
+            <img class="img-icon" src="assets/images/bird.png"/>
+            Bird
+          </a>
+          <a id="swan">
+            <img class="img-icon" src="assets/images/swan.png"/>
+            Swan
+          </a><a id="hammer">
+            <img class="img-icon" src="assets/images/hammer.png"/>
+            Hammer
+          </a>
+          <a id="sailboat-1">
+            <img class="img-icon" src="assets/images/sailboat-1.png"/>
+            Sail Boat 1
+          </a>
+          <a id="sailboat-2">
+            <img class="img-icon" src="assets/images/sailboat-2.png"/>
+            Sail Boat 2
+          </a>
+          <a id="mountain">
+            <img class="img-icon" src="assets/images/mountain.png"/>
+            Mountain
+          </a>
         </div>
 
-        <div class="shape" id="lg-triangle2">
-          <svg height="150" width="300" viewbox="0 0 300 150">
-            <polygon points="0,0 150,150 300,0 0,0"
-            fill="rgb(249, 170, 32)"/>
-          </svg>
-        </div>
+        <div class="shapes-container">
+          <div class="shape" id="lg-triangle1">
+            <svg height="300" width="150" viewbox="0 0 150 300">
+              <polygon points="0,0 0,300 150,150 0,0"
+              fill="rgb(104, 188, 231)"/>
+            </svg>
+          </div>
 
-        <div class="shape" id="sm-triangle1">
-          <svg height="75" width="150" viewbox="0 0 150 75">
-            <polygon points="0,75 150,75 75,0 0,75"
-            fill="rgb(155, 82, 5)"/>
-          </svg>
-        </div>
+          <div class="shape" id="lg-triangle2">
+            <svg height="150" width="300" viewbox="0 0 300 150">
+              <polygon points="0,0 150,150 300,0 0,0"
+              fill="rgb(237, 130, 33)"/>
+            </svg>
+          </div>
 
-        <div class="shape" id="sm-triangle2">
-          <svg height="150" width="75" viewbox="0 0 75 150">
-            <polygon points="75,0 75,150 0,75 75,0"
-            fill="rgb(70, 65, 244)"/>
-          </svg>
-        </div>
+          <div class="shape" id="sm-triangle1">
+            <svg height="75" width="150" viewbox="0 0 150 75">
+              <polygon points="0,75 150,75 75,0 0,75"
+              fill="rgb(234, 229, 0)"/>
+            </svg>
+          </div>
 
-        <div class="shape" id="rhomboid">
-          <svg height="75" width="225" viewbox="0 0 225 75">
-            <polygon points="0,75 150,75 225,0 75,0 0,75"
-            fill="rgb(95, 176, 228)"/>
-          </svg>
-        </div>
+          <div class="shape" id="sm-triangle2">
+            <svg height="150" width="75" viewbox="0 0 75 150">
+              <polygon points="75,0 75,150 0,75 75,0"
+              fill="rgb(0, 64, 229)"/>
+            </svg>
+          </div>
 
-        <div class="shape" id="square">
-          <svg height="100" width="100" viewbox="0 0 100 100">
-            <polygon points="0,0 0,100 100,100 100,0 0,0"
-            fill="yellow"/>
-          </svg>
-        </div>
+          <div class="shape" id="rhomboid">
+            <svg height="75" width="225" viewbox="0 0 225 75">
+              <polygon points="0,75 150,75 225,0 75,0 0,75"
+              fill="rgb(229, 0, 206)"/>
+            </svg>
+          </div>
 
-        <div class="shape" id="med-triangle">
-          <svg height="150" width="150" viewbox="0 0 150 150">
-            <polygon points="0,150 150,150 150,0 0,150"
-            fill="rgb(255, 0, 0)"/>
-          </svg>
-        </div>
+          <div class="shape" id="square">
+            <svg height="100" width="100" viewbox="0 0 100 100">
+              <polygon points="0,0 0,100 100,100 100,0 0,0"
+              fill="rgb(0, 229, 165)"/>
+            </svg>
+          </div>
 
+          <div class="shape" id="med-triangle">
+            <svg height="150" width="150" viewbox="0 0 150 150">
+              <polygon points="0,150 150,150 150,0 0,150"
+              fill="rgb(15, 160, 15)"/>
+            </svg>
+          </div>
+
+        </div>
       </div>
 
       <div id="display-grid">
-        <svg height="500" width="500" viewbox="0 0 500 500" id="display-svg">
-          <polygon class="current"/>
-        </svg>
+        <img
+          id="display-svg"
+          src="assets/images/arrow.png"/>
       </div>
 
-      <div class="sidebar">
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-        <a>Puzzle</a>
-      </div>
     </div>
   </body>
 </html>

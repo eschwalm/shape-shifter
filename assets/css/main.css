@@ -43,13 +43,13 @@ header {
 }
 
 .sidebar {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  height: 500px;
+  width: 300px;
+  height: 175px;
   border: 1px solid black;
   overflow: auto;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  /*margin-top: 10px;*/
 }
 
 
@@ -62,6 +62,7 @@ header {
   line-height: 52px;
   color: rgb(95, 176, 228);
   background: white;
+  font-size: 19px;
 }
 
 .sidebar a:hover {
@@ -69,15 +70,76 @@ header {
 }
 
 #display-grid {
-  display: block;
-  height: 500px;
-  width: 500px;
-  margin-left: 25px;
+  display: inline-block;
+  height: 600px;
+  width: 700px;
+  margin-left: 50px;
   margin-right: 25px;
   border: 2px solid black;
   background-size: 10px;
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, rgba(255, 255, 255, 1) 1px);
   background-position: 1px 9px;
+  text-align: center;
+}
+
+#display-svg {
+  height: auto;
+  max-width: 475px;
+  position: relative;
+  margin: 0;
+  filter: contrast(0%) brightness(50%) opacity(10%);
+  pointer-events: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#arrow {
+  max-width: 475px;
+}
+
+#chevron {
+  max-width: 430px;
+}
+
+#building {
+  max-width: 300px;
+}
+
+#camel {
+  max-width: 430px;
+}
+
+#bird {
+  max-width: 500px;
+}
+
+#sailboat-1 {
+  max-width: 430px;
+}
+
+#sailboat-2 {
+  max-width: 525px;
+}
+
+#swan {
+  max-width: 415px;
+}
+
+#hammer {
+  max-width: 600px;
+}
+
+#mountain {
+  max-width: 600px;
+}
+.img-icon {
+  height: auto;
+  width: 25px;
+  margin-right: 10px;
+  filter: contrast(0%) brightness(0%);
+  vertical-align: middle;
 }
 
 #current {
