@@ -45,10 +45,10 @@ a:link {
 
 .sub-title {
   font-family: 'Roboto Mono', monospace;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  top: -38px;
   right: 0;
-  left: 600px;
+  left: 15px;
   bottom: 0;
   width: fit-content;
   display: inline-block;
@@ -143,20 +143,20 @@ a:link {
 }
 
 #solution-button {
-  position: absolute;
-  top: 150px;
-  right: 110px;
+  position: relative;
+  top: 15px;
+  right: -40px;
   float: right;
 }
 
 #details {
-  position: absolute;
+  position: relative;
   color: black;
   border: 2px solid #4CAF50;
   border-radius: 20px;
-  top: 150px;
-  left: 515px;
-  float: right;
+  top: 16px;
+  left: 25px;
+  float: left;
   background-color: white;
   padding: 2px 7px 2px 7px;
 }
@@ -186,10 +186,10 @@ a:link {
 }
 
 #reset-button {
-  position: absolute;
-  top: 150px;
-  right: 200px;
-  float: right;
+  position: relative;
+    top: 15px;
+    right: 110px;
+    float: right;
 }
 
 #display-svg {
