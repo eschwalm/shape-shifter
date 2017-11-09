@@ -37,6 +37,7 @@ a:link {
   display: flex;
   padding-left: 50px;
   padding-right: 50px;
+  justify-content: center;
 }
 
 .title {
