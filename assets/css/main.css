@@ -130,7 +130,7 @@ a:link {
 }
 
 #display-grid {
-  display: inline-block;
+  display: block;
   height: 600px;
   width: 700px;
   margin-left: 50px;
@@ -140,6 +140,18 @@ a:link {
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1px, rgba(255, 255, 255, 1) 1px);
   background-position: 1px 9px;
   text-align: center;
+}
+
+#img-container {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 #solution-button {
@@ -195,14 +207,14 @@ a:link {
 #display-svg {
   height: auto;
   max-width: 475px;
-  position: relative;
-  margin: 0;
   filter: contrast(0%) brightness(50%) opacity(10%);
   pointer-events: none;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #arrow {
